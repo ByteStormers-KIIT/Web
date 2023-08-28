@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Number Converter</h2>
+        <label for="inputType">Select Input Type:</label>
+        <select id="inputType">
+            <option value="binary">Binary</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+            <option value="decimal">Decimal</option>
+        </select>
+        <label for="inputValue">Enter Input Value:</label>
+        <input type="text" id="inputValue">
+        <button id="convertBtn">Convert</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        /*Sangram Update the JS PART
+          /*const convertBtn = document.getElementById("convertBtn");
+          const inputType = document.getElementById("inputType");
+          const inputValue = document.getElementById("inputValue");
+          const result = document.getElementById("result");
+        
+          convertBtn.addEventListener("click", () => {
+            const selectedType = inputType.value;
+            const value = inputValue.value;
+        
+            if (selectedType === "binary") {
+              result.textContent = parseInt(value, 2);
+            } else if (selectedType === "octal") {
+              result.textContent = parseInt(value, 8);
+            } else if (selectedType === "hexadecimal") {
+              result.textContent = parseInt(value, 16);
+            } else if (selectedType === "decimal") {
+              result.textContent = value;
+            }
+          });*/
+    </script>
+</body>
+
+</html>
